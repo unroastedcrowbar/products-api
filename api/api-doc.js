@@ -17,6 +17,19 @@ const apiDoc = {
                     type: 'string',
                     description: 'The product name.',
                 },
+                current_price: {
+                    type: 'object',
+                    properties: {
+                        value: {
+                            type: 'number',
+                            description: 'The current price.',
+                        },
+                        currency_code: {
+                            type: 'string',
+                            description: 'The currency code.',
+                        },
+                    },
+                },
             },
             required: ['id', 'name'],
         }

@@ -22,15 +22,16 @@ const getProduct = productId =>
 
 
 module.exports = function () {
-    let operations = {GET};
+    let operations = {GET, PUT};
   
     async function GET(req, res, next) {
+      // Fetch from the product api.
       const productId = req.params.id;
       const productResponse = await getProduct(productId);
       const productData = await productResponse.json();
 
+      // Fetch from the pricing db.
       const pricingData = await getPricing(productId);
-      // This DB happens to have duplicate id's so use only the first.
       const {value, currency_code} = pricingData[0];
 
       const product = {
@@ -46,11 +47,13 @@ module.exports = function () {
     }
 
     async function PUT(req, res, next) {
+      // Save to the db.
       new Product({
-        productId: req.params.id,
-        value: req.params.current_price.value,
-        currency_code: req.params.current_price.currency_code,
+        productId: req.body.id,
+        value: req.body.current_price.value,
+        currency_code: req.body.current_price.currency_code,
       }).save();
+
       res.status(200).send();
     }
   
