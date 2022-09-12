@@ -16,3 +16,5 @@ npm run start
 
 ## View Docs
 `http://localhost:8080/api-documentation`
+<img width="1431" alt="image" src="https://user-images.githubusercontent.com/8432353/189594505-f38182f6-384e-473c-a518-3764db301e1e.png">
+<img width="1437" alt="image" src="https://user-images.githubusercontent.com/8432353/189594619-72751753-4b31-4079-a44a-25cca73a0546.png">
