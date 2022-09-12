@@ -37,4 +37,4 @@ Manually tested.
 
 ### Confirm that the price changed
 <img width="1615" alt="image" src="https://user-images.githubusercontent.com/8432353/189603759-0b87711a-bf15-490c-8df8-5a2e6647bba1.png">
-![Capture](https://user-images.githubusercontent.com/8432353/189605404-8432311a-e221-43cf-829b-d8192c67be86.PNG)
+<img width="1046" alt="image" src="https://user-images.githubusercontent.com/8432353/189605574-f6b6b406-bfb3-425e-816a-7936a7bb8d02.png">
