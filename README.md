@@ -25,3 +25,10 @@ npm run start
 
 <img width="1437" alt="image" src="https://user-images.githubusercontent.com/8432353/189594731-0aab23a2-cd05-4e9d-bd92-5fe8d55e428a.png">
 <img width="1437" alt="image" src="https://user-images.githubusercontent.com/8432353/189594619-72751753-4b31-4079-a44a-25cca73a0546.png">
+
+## Make requests
+<img width="1602" alt="image" src="https://user-images.githubusercontent.com/8432353/189603587-f1d4569c-c146-4b6e-8a63-1902add6709b.png">
+<img width="1611" alt="image" src="https://user-images.githubusercontent.com/8432353/189603690-578796f6-7fdc-471f-af68-dac019e56963.png">
+<img width="1615" alt="image" src="https://user-images.githubusercontent.com/8432353/189603759-0b87711a-bf15-490c-8df8-5a2e6647bba1.png">
+
+
