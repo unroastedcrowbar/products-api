@@ -28,7 +28,7 @@ npm run start
 <img width="1437" alt="image" src="https://user-images.githubusercontent.com/8432353/189594619-72751753-4b31-4079-a44a-25cca73a0546.png">
 
 # Testing
-Manually tested.
+- [x] Manually tested.
 ### Get a product
 <img width="1602" alt="image" src="https://user-images.githubusercontent.com/8432353/189603587-f1d4569c-c146-4b6e-8a63-1902add6709b.png">
 
