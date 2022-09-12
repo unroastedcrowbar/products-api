@@ -16,10 +16,8 @@ module.exports = function () {
       const product = {
         id: data.data.product.tcin,
         name: data.data.product.item.product_description.title,
-      };;
+      };
 
-      // TODO: Return data from
-      // https://redsky-uat.perf.target.com/redsky_aggregations/v1/redsky/case_study_v1?key=3yUxt7WltYG7MFKPp7uyELi1K40ad2ys&tcin=13860428
       res.status(200).json(product);
     }
   
