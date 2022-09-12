@@ -2,23 +2,20 @@ var fetch = require('node-fetch');
 
 const getProductById = id => 
   fetch(
-    'https://redsky-uat.perf.target.com/redsky_aggregations/v1/redsky/case_study_v1',
-    {
-      key: '3yUxt7WltYG7MFKPp7uyELi1K40ad2ys',
-      tcin: id,
-    }
+    `https://redsky-uat.perf.target.com/redsky_aggregations/v1/redsky/case_study_v1?key=3yUxt7WltYG7MFKPp7uyELi1K40ad2ys&tcin=${id}`,
   );
 
 module.exports = function () {
     let operations = {GET};
   
-    function GET(req, res, next) {
-      console.log(req.params.id);
+    async function GET(req, res, next) {
+      const response = await getProductById(req.params.id);
+      const data = await response.json();
+      console.log(data);
 
-      const response = getProductById(req.params.id);
       const product = {
-        id: res.data.product.tcin,
-        name: res.data.product.item.product_description.title,
+        id: data.data.product.tcin,
+        name: data.data.product.item.product_description.title,
       };;
 
       // TODO: Return data from
