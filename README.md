@@ -5,6 +5,10 @@ The goal for this exercise is to create an end-to-end Proof-of-Concept for a pro
 
 Your goal is to create a RESTful service that can retrieve product and price details by ID. The URL structure is up to you to define, but try to follow some sort of logical convention.
 
+- [x] Reads product info from external API and pricing info from a NoSQL data store and combines it with the product id and name from the HTTP request into a single response.
+- [x] BONUS: Accepts an HTTP PUT request and updates the product's price in the data store.
+- [ ] Unit tests.
+
 # How to run
 ```bash
 # Install dependencies
