@@ -1,11 +1,10 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var { initialize } = require("express-openapi");
-var swaggerUi = require('swagger-ui-express');
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const { initialize } = require("express-openapi");
+const swaggerUi = require('swagger-ui-express');
 
-var app = express();
+const app = express();
 
 app.listen(8080);
 app.use(logger('dev'));
