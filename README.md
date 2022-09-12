@@ -8,6 +8,8 @@ Your goal is to create a RESTful service that can retrieve product and price det
 - [x] Reads product info from external API and pricing info from a NoSQL data store and combines it with the product id and name from the HTTP request into a single response.
 - [x] BONUS: Accepts an HTTP PUT request and updates the product's price in the data store.
 - [ ] Unit tests.
+- [ ] Error Handling.
+- [ ] Logging / Monitoring.
 
 # How to run
 ```bash
