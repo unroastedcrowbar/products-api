@@ -48,11 +48,13 @@ module.exports = function () {
 
     async function PUT(req, res, next) {
       // Save to the db.
-      new Product({
+      const doc = await Product.findOneAndUpdate({
         productId: req.body.id,
+      }, {
         value: req.body.current_price.value,
         currency_code: req.body.current_price.currency_code,
-      }).save();
+      });
+      doc.save();
 
       res.status(200).send();
     }
