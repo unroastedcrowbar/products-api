@@ -38,3 +38,17 @@ npm run start
 ### Confirm that the price changed
 <img width="1615" alt="image" src="https://user-images.githubusercontent.com/8432353/189603759-0b87711a-bf15-490c-8df8-5a2e6647bba1.png">
 <img width="1046" alt="image" src="https://user-images.githubusercontent.com/8432353/189605574-f6b6b406-bfb3-425e-816a-7936a7bb8d02.png">
+
+# What's next?
+## Unit tests
+Add jest as a dependency. Then, mock out getProduct and getPricing in
+https://github.com/unroastedcrowbar/products-api/blob/main/api/paths/products/%7Bid%7D/index.js#L16
+
+## Error Handling
+For GET, what happens if either product API and the pricing data source do not return data? This is probably not useful so we should return a 404 NOT FOUND.
+
+For PUT, what happens if the product does not exist? The current requirements state it is an update only, but we may want to change this in order to create products.
+
+## Logging and Monitoring
+We will probably want to set up logging and monitoring dashboards. Perhaps set up thresholds that alert a Slack criticals channel.
+
