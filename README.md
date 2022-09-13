@@ -52,3 +52,6 @@ For PUT, what happens if the product does not exist? The current requirements st
 ## Logging and Monitoring
 We will probably want to set up logging and monitoring dashboards. Perhaps set up thresholds that alert a Slack criticals channel.
 
+## Client Generation
+Since this is using OpenAPI, any potential clients (Java, Javascript, Python, etc.) can be auto-generated with Swagger CodeGen. This requires some exploration.
+
